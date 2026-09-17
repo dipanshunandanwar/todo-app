@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Students List</h1>
+    <div id="students">
+
+    </div>
+    <script>
+        const students = [
+            {
+                "id": 1,
+                "name": "Aarav Sharma",
+                "email": "aarav.sharma@example.com",
+                "age": 20,
+                "grade": "C",
+                "major": "Computer Science"
+            },
+            {
+                "id": 2,
+                "name": "Priya Patel",
+                "email": "priya.patel@example.com",
+                "age": 21,
+                "grade": "A+",
+                "major": "Information Technology"
+            },
+            {
+                "id": 3,
+                "name": "Rohan Mehta",
+                "email": "rohan.mehta@example.com",
+                "age": 19,
+                "grade": "B+",
+                "major": "Mechanical Engineering"
+            },
+            {
+                "id": 4,
+                "name": "Ananya Desai",
+                "email": "ananya.desai@example.com",
+                "age": 22,
+                "grade": "A",
+                "major": "Business Administration"
+            },
+            {
+                "id": 5,
+                "name": "Kabir Joshi",
+                "email": "kabir.joshi@example.com",
+                "age": 20,
+                "grade": "B",
+                "major": "Electrical Engineering"
+            },
+            {
+                "id": 6,
+                "name": "deepanshu nandanwar",
+                "email": "deepanshunandanwar@gmail.com",
+                "age": 21,
+                "grade": "a",
+                "major": "Electrical Engineering"
+            }
+        ];
+
+        students.forEach((s) => {
+            const h2 = document.createElement("p");
+            h2.textContent =s["name"] + "{" + s["email"] + "}";
+            document.getElementById("students").append(h2);
+        })
+    </script>
+</body>
+
+</html>
